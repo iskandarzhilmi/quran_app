@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:learn_hive/quran.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -80,10 +79,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemBuilder: (BuildContext context, int lineIndex) {
                       String word = '';
                       // String detail = snapshot.data[index]['detail']['line_type'];
-
                       var lineType =
                           snapshot.data[lineIndex]['detail']['line_type'];
-
                       if (lineType == 'start_sura') {
                         word = snapshot.data[lineIndex]['detail']['name'];
                       } else if (lineType == 'besmellah') {

@@ -31,7 +31,6 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   hive_generator: any
   build_runner: any
-  http: any
   google_fonts: any
   mockito: any
 
