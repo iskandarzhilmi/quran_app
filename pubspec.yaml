@@ -13,9 +13,16 @@ dependencies:
     sdk: flutter
 
 
-  cupertino_icons: ^1.0.2
-  hive: ^2.2.1
-  hive_flutter: ^1.1.0
+  cupertino_icons: any
+  hive: any
+  hive_flutter: any
+  get_it: any
+  flutter_bloc: any
+  equatable: any
+  dartz: any
+  connectivity: any
+  http: any
+  shared_preferences: any
 
 dev_dependencies:
   flutter_test:
@@ -26,6 +33,7 @@ dev_dependencies:
   build_runner: any
   http: any
   google_fonts: any
+  mockito: any
 
 flutter:
 
