@@ -100,7 +100,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           }
                         }
                       }
-
                       return Text(
                         word,
                         textDirection: TextDirection.rtl,
