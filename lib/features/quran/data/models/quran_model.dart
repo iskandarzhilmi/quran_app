@@ -41,4 +41,10 @@ class QuranModel extends Quran {
     print(pageText);
     return QuranModel(text: pageText);
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'text': text,
+    };
+  }
 }

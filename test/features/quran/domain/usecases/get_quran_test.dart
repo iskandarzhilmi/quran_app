@@ -27,6 +27,7 @@ void main() {
     final result = await usecase(Params(page: tPageNumber));
     // assert
     expect(result, equals(Right(tQuran.text)));
+
     // verify(mockQuranRepository.getQuranText(tPageNumber));
     // verifyNoMoreInteractions(mockQuranRepository);
   });
