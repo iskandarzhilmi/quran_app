@@ -2,16 +2,15 @@ part of 'quran_bloc.dart';
 
 abstract class QuranEvent extends Equatable {
   const QuranEvent();
+
+  @override
+  List<Object?> get props => [];
 }
 
-class QuranEventImplementation implements QuranEvent {
-  @override
-  // TODO: implement props
-  List<Object?> get props => throw UnimplementedError();
+class QuranPagePicked extends QuranEvent {
+  const QuranPagePicked(this.page);
+  final int page;
 
   @override
-  // TODO: implement stringify
-  bool? get stringify => throw UnimplementedError();
-
-  QuranDropdownChosen;
+  List<Object?> get props => [page];
 }
