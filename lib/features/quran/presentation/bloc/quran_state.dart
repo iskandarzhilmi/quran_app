@@ -2,16 +2,31 @@ part of 'quran_bloc.dart';
 
 class QuranStateModel extends Equatable {
   final Quran quran;
+  final QuranState quranState;
 
-  const QuranStateModel({required this.quran});
+  const QuranStateModel({
+    required this.quran,
+    required this.quranState,
+  });
 
   @override
-  // TODO: implement props
-  List<Object?> get props => [quran];
+  List<Object?> get props => [quran, quranState];
+
+  QuranStateModel copyWith({
+    Quran? newQuran,
+    QuranState? newQuranState,
+  }) {
+    return QuranStateModel(
+      quran: newQuran ?? quran,
+      quranState: newQuranState ?? quranState,
+    );
+  }
 
   factory QuranStateModel.initial() {
     return QuranStateModel(
-      quran: Quran(text: ''), //TODO: Betul ka ni?
+      //TODO: Betul ka ni?
+      quran: Quran(text: ''),
+      quranState: QuranLoading(),
     );
   }
 }
